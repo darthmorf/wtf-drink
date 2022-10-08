@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Picolo Web</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="shortcut icon" type="image/png" href="./favicon.ico"/>
+        <link rel="stylesheet" href="./assets/fontawesome-free-5.12.1-web//css/all.css">
+        <script src="./js/main.js"></script> 
+        <script src="./js/prompts.js"></script> 
+    </head>
+    <body onload="onload()">
+    <div id="bg" class="bg pointy rainbow" onclick="newPrompt()">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="content">
+            <div id="title" class="header"></div>
+            <div id="body" class="instruction">Enter Names in settings menu, then tap to start.</div>
+
+        </div>
+
+        
+        
+    </div>
+    <i class="fas fa-cog settingsBtn floatBtn" onclick="toggleMenu();"></i>
+    <i class="fas fa-expand fullscreenBtn floatBtn" id="fullscreenBtn" onclick="openFullscreen();"></i>
+    <i class="fas fa-sync-alt refreshBtn floatBtn" id="refreshBtn" onclick="location.reload();"></i>
+    <div id="menu" class="menu disabled">
+        <div class="menuTitle">Options</div>
+        <div class="menuSubtitle">Players</div>
+        <textarea class="nameInput" id="nameInput" placeholder="Enter names of players on each line"></textarea><br>
+        <div>
+            <label for="drinkMultiplier" class="menuSubtitle">Drink Multiplier:</label>
+            <input type="number" id="drinkMultiplier" name="drinkMultiplier" min="1" value="1" class="numberInput">
+        </div>
+        <div>
+            <label for="virusMultiplier" class="menuSubtitle">Virus Multiplier:&nbsp</label>
+            <input type="number" id="virusMultiplier" name="virusMultiplier" min="1" value="1" class="numberInput">
+        </div><br>
+        <div class=credit><a href="https://www.paypal.me/sampoirier26/3"  target="_blank">Website by Sam Poirier. If you enjoy it, consider clicking here to send me a pint!</a></div>
+        
+    </div>
+    </body>
+</html>

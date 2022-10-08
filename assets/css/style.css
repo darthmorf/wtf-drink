@@ -1,0 +1,224 @@
+.bg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.pointy {
+	cursor: pointer;
+}
+
+.rainbow {
+	background: linear-gradient(-45deg, hsl(0, 100%, 50%), hsl(56, 100%, 50%), hsl(112, 100%, 50%), hsl(185, 100%, 50%),hsl(238, 100%, 50%), hsl(278, 100%, 50%), hsl(309, 100%, 50%));
+	animation: gradient 30s ease infinite;
+	background-size: 400% 400%;
+}
+
+.standard {
+	background: linear-gradient(-45deg, hsl(214, 100%, 50%), #e100ff);
+	animation: gradient 30s ease infinite;
+	background-size: 400% 400%;
+}
+
+.virus {
+	background: linear-gradient(-45deg, hsl(0, 100%, 50%), hsl(56, 100%, 50%));
+	animation: gradient 30s ease infinite;
+	background-size: 400% 400%;
+}
+
+.game {
+	background: linear-gradient(-45deg, hsl(112, 100%, 50%), hsl(185, 100%, 50%));
+	animation: gradient 30s ease infinite;
+	background-size: 400% 400%;
+}
+
+.content {
+	margin: auto;
+	width: 75%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-shadow: 0px 0px 1vmin #000000;
+}
+
+.header {
+	font-family: "OpenSans-Bold";
+	font-size: 18vmin;
+}
+
+.instruction {
+	font-family: "OpenSans-Regular";
+	font-size: 9vmin;
+}
+
+.floatBtn {
+	color: white;
+	font-size: 10vmin;
+	position: absolute;
+	text-shadow: 0px 0px 1vmin #000000;
+}
+
+.settingsBtn {
+	top: 1vmin;
+	right: 1vmin;
+}
+
+.fullscreenBtn {
+	top: 13vmin;;
+	right: 1.5vmin;
+}
+
+.refreshBtn {
+	top: 25vmin;;
+	right: 1.5vmin;
+}
+
+.floatBtn:hover {
+	cursor: pointer;
+}
+
+.disabled {
+	display: none !important;
+}
+
+.menu {
+	opacity: 0;
+	margin: auto;
+	width: 65%;
+	height: 90%;
+	min-height: fit-content;
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 1vmin;
+	box-shadow: 0px 0px 1vmin #000000;
+	padding: 2vmin;
+	background-color: #ffffff;
+	cursor: auto;
+}
+
+.menuTitle {
+	color: black;
+	font-family: "OpenSans-Condensed-Bold";
+	font-size: 10vmin;
+	margin-top: -4vh;
+}
+
+.menuSubtitle {
+	color: black;
+	font-family: "OpenSans-Condensed-Bold";
+	font-size: 6vmin;
+	padding-right: 1vmin;
+}
+
+.menuLabel {
+	color: black;
+	font-family: "OpenSans-Condensed-Bold";
+	font-size: 3vmin;
+	padding-right: 1vmin;
+}
+
+.menuText {
+	color: black;
+	font-family: "OpenSans-Regular";
+	font-size: 3vmin;
+}
+
+.menuText a {    
+	color: black;
+    font-family: "OpenSans-Light";
+}
+
+.menuText a:visited {    
+	color: black;
+    font-family: "OpenSans-Light";
+}
+
+
+.nameInput {
+	resize: none;
+	width: 100%;
+	background-color: rgb(235, 235, 235);
+	height: 50%;
+	border-radius: 1vmin;
+	margin-top: 0.5vmin;
+	font-family: "OpenSans-Regular";
+	padding: 0.5vmin;
+	margin-bottom: 1vmin;
+	font-size: 5vmin;
+	border: 1px solid #ccc;
+}
+
+.numberInput {
+	background-color:rgb(235, 235, 235);
+	border-radius: 1vmin;
+	font-family: "OpenSans-Regular";
+	font-size: 4vmin;
+	border: 1px solid#ccc;
+	padding-left: 1vmin;
+	width: 15vmin;
+}
+
+.credit {
+	font-family: "OpenSans-Light-Italic";
+	text-decoration: white;
+	font-size: 3vmin;
+	margin-top: 1vmin;
+	margin-bottom: 1vmin;
+	vertical-align: bottom;
+}
+
+.credit a:visited {
+	color: black;
+	text-decoration: white;
+}
+
+.credit a {
+	color: black;
+	text-decoration: white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@font-face {
+    font-family: "OpenSans-Bold";
+    src: url("../fonts/OpenSans/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Condensed-Bold";
+    src: url("../fonts/OpenSans/OpenSansCondensed-Bold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Light-Italic";
+    src: url("../fonts/OpenSans/OpenSans-LightItalic.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Light";
+    src: url("../fonts/OpenSans/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url("../fonts/OpenSans/OpenSans-Regular.ttf");
+}
+
+
